@@ -1,10 +1,13 @@
 package silly.chemthunder.macabre;
 
 import net.fabricmc.api.ModInitializer;
-
 import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import silly.chemthunder.macabre.index.MacabreDataComponents;
+import silly.chemthunder.macabre.index.MacabreEntities;
+import silly.chemthunder.macabre.index.MacabreItemGroups;
+import silly.chemthunder.macabre.index.MacabreItems;
 
 public class Macabre implements ModInitializer {
 	public static final String MOD_ID = "macabre";
@@ -16,9 +19,10 @@ public class Macabre implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// This code runs as soon as Minecraft is in a mod-load-ready state.
-		// However, some things (like resources) may still be uninitialized.
-		// Proceed with mild caution.
+        MacabreItems.index();
+        MacabreDataComponents.index();
+        MacabreItemGroups.index();
+        MacabreEntities.index();
 
 		LOGGER.info("Boingle Doingle");
 	}

@@ -11,7 +11,7 @@ import java.util.function.Function;
 
 public interface MacabreItems {
     Item GAUNTLET = create("gauntlet", GauntletItem::new, new Item.Settings()
-            .maxCount(16)
+            .maxCount(1)
     );
 
     static Item create(String name, Function<Item.Settings, Item> factory, Item.Settings settings) {
