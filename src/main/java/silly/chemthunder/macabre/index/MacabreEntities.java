@@ -1,7 +1,7 @@
 package silly.chemthunder.macabre.index;
 
 import net.fabricmc.fabric.api.client.rendering.v1.EntityRendererRegistry;
-import net.fabricmc.fabric.api.object.builder.v1.entity.FabricDefaultAttributeRegistry;
+import net.minecraft.client.render.entity.EmptyEntityRenderer;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.SpawnGroup;
@@ -10,7 +10,6 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import silly.chemthunder.macabre.Macabre;
-import silly.chemthunder.macabre.client.entity.ShockwaveRenderer;
 import silly.chemthunder.macabre.entity.ShockwaveEntity;
 
 public interface MacabreEntities {
@@ -33,6 +32,6 @@ public interface MacabreEntities {
     }
 
     static void clientIndex() {
-        EntityRendererRegistry.register(SHOCKWAVE, ShockwaveRenderer::new);
+        EntityRendererRegistry.register(SHOCKWAVE, EmptyEntityRenderer::new);
     }
 }
