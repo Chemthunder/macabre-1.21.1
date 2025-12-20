@@ -1,0 +1,14 @@
+{
+  "item.macabre.bone_saw": "Bone Saw",
+
+
+  "enchantment.macabre.vanity": "Vanity",
+  "enchantment.macabre.vanity.desc": "Replaces the dash, instead the Bone Saw now spews out a clump of blood, which bypasses armor.",
+
+  "enchantment.macabre.desecration": "Desecration",
+  "enchantment.macabre.desecration.desc": "Every hit will now give one random item from the entity's lootpool, excluding players.",
+
+  "death.attack.butchering": "%1$s was butchered",
+  "death.attack.butchering.player": "%1$s was butchered by %2$s",
+  "death.attack.butchering.item": "%1$s was butchered by %2$s wielding %3$s"
+}

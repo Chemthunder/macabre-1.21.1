@@ -55,6 +55,9 @@ dependencies {
     modImplementation "maven.modrinth:acornlib:${project.acornlib_version}"
     modImplementation include("maven.modrinth:nitrogen_rbn:${project.nitrogen_version}")
 
+    // enchancement
+    modImplementation ("maven.modrinth:enchancement:${project.enchancement_version}")
+
     // Config
     modApi ("com.terraformersmc:modmenu:${project.modmenu_version}")
     modImplementation ("maven.modrinth:midnightlib:${project.midnightlib_version}")

@@ -31,6 +31,12 @@
   "mixins": [
     "macabre.mixins.json"
   ],
+  "custom": {
+    "cardinal-components": [
+      "macabre:dashing",
+      "macabre:starved"
+    ]
+  },
   "depends": {
     "fabricloader": ">=0.18.3",
     "minecraft": "~1.21.1",

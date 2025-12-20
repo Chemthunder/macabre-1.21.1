@@ -18,6 +18,11 @@ public interface MacabreDataComponents {
             .build()
     );
 
+    ComponentType<Integer> SAW_CHARGE = create("saw_charge", new ComponentType.Builder<Integer>()
+            .codec(Codec.INT)
+            .build()
+    );
+
     static <T extends ComponentType<?>> T create(String name, T component) {
         COMPONENTS.put(component, Macabre.id(name));
         return component;

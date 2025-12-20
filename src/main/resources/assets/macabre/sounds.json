@@ -1,0 +1,8 @@
+{
+  "item.divine_bell": {
+    "sounds": [
+      "macabre:item/divine_bell"
+    ],
+    "subtitle": "subtitles.macabre.divine_bell"
+  }
+}

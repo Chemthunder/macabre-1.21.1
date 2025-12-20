@@ -1,0 +1,12 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "macabre:item/bone_saw_gui"
+  },
+  "overrides": [
+    {
+      "predicate": { "is_held": 1.0 },
+      "model": "macabre:item/bone_saw_handheld"
+    }
+  ]
+}

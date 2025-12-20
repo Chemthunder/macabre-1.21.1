@@ -10,15 +10,15 @@ import net.minecraft.registry.Registry;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import silly.chemthunder.macabre.Macabre;
-import silly.chemthunder.macabre.entity.ShockwaveEntity;
+import silly.chemthunder.macabre.entity.BloodShotEntity;
 
 public interface MacabreEntities {
-    EntityType<ShockwaveEntity> SHOCKWAVE = create(
-            "shockwave",
+    EntityType<BloodShotEntity> BLOOD_SHOT = create(
+            "blood_shot",
             EntityType.Builder.create(
-                    ShockwaveEntity::new,
+                    BloodShotEntity::new,
                     SpawnGroup.MISC
-            ).dimensions(0.6f, 0.6f)
+            ).dimensions(1.6f, 1.6f)
     );
 
     static <T extends Entity> EntityType<T> create(String name, EntityType.Builder<T> builder) {
@@ -32,6 +32,6 @@ public interface MacabreEntities {
     }
 
     static void clientIndex() {
-        EntityRendererRegistry.register(SHOCKWAVE, EmptyEntityRenderer::new);
+        EntityRendererRegistry.register(BLOOD_SHOT, EmptyEntityRenderer::new);
     }
 }

@@ -27,5 +27,6 @@ public interface MacabreItemGroups {
 
     private static void addEntries(FabricItemGroupEntries itemGroup) {
         itemGroup.add(MacabreItems.GAUNTLET);
+        itemGroup.add(MacabreItems.BONE_SAW);
     }
 }
